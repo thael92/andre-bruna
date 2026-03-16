@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-marfim: #FFFFF0;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4D03F;
+  --color-beige-light: #FDFCF0;
+  --color-pink-soft: #FFF0F5;
+  --color-pink-romantic: #FFB6C1;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Poppins", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-soft {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.7;
+    }
+  }
+}
+
+:root {
+  font-family: "Poppins", system-ui, sans-serif;
+  background-color: #FFFFF0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Custom styles for Swiper and Glassmorphism */
+.glass {
+  background: rgba(255, 255, 240, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(to right, #D4AF37, #F4D03F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  background: #D4AF37 !important;
+}
